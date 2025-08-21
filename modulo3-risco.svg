@@ -1,0 +1,105 @@
+<svg viewBox="0 0 400 320" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="backgroundGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a0d;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d2d0a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d0d06;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+    </linearGradient>
+    
+    <radialGradient id="fireGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.9" />
+      <stop offset="30%" style="stop-color:#FF8C00;stop-opacity:0.8" />
+      <stop offset="60%" style="stop-color:#FF4500;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8B0000;stop-opacity:0.3" />
+    </radialGradient>
+    
+    <!-- Filtros para efeitos -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="320" fill="url(#backgroundGrad)"/>
+  
+  <!-- Pontos dourados de fundo -->
+  <circle cx="50" cy="40" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="120" cy="25" r="1.5" fill="#FFD700" opacity="0.4"/>
+  <circle cx="200" cy="35" r="2.5" fill="#FFD700" opacity="0.5"/>
+  <circle cx="280" cy="20" r="1" fill="#FFD700" opacity="0.3"/>
+  <circle cx="350" cy="45" r="2" fill="#FFD700" opacity="0.6"/>
+  <circle cx="80" cy="280" r="1.5" fill="#FFD700" opacity="0.4"/>
+  <circle cx="320" cy="290" r="2" fill="#FFD700" opacity="0.5"/>
+  
+  <!-- Linhas douradas de fundo -->
+  <line x1="30" y1="60" x2="370" y2="40" stroke="#FFD700" stroke-width="0.5" opacity="0.3" stroke-dasharray="5,5"/>
+  <line x1="20" y1="100" x2="380" y2="80" stroke="#FFD700" stroke-width="0.5" opacity="0.2" stroke-dasharray="3,3"/>
+  
+  <!-- Mão segurando notas -->
+  <g transform="translate(250, 80)">
+    <!-- Mão -->
+    <path d="M0 80 Q5 75 10 80 L15 85 Q20 90 25 85 L30 80 Q35 75 40 80 L45 85 Q50 90 55 85 L60 80 Q65 85 70 90 L75 95 Q80 100 75 105 L70 110 Q60 115 50 110 L40 105 Q30 100 20 105 L10 110 Q0 105 0 95 Z" fill="#D2B48C" stroke="#8B7355" stroke-width="1"/>
+    
+    <!-- Notas de Euro -->
+    <g transform="translate(10, -20)">
+      <!-- Nota 1 -->
+      <rect x="0" y="0" width="50" height="30" rx="3" fill="#4A90A4" stroke="#2E5266" stroke-width="1"/>
+      <text x="25" y="20" text-anchor="middle" fill="#1A3A4A" font-family="Arial, sans-serif" font-size="12" font-weight="bold">100</text>
+      <text x="40" y="12" text-anchor="middle" fill="#1A3A4A" font-family="Arial, sans-serif" font-size="6">★</text>
+      <text x="25" y="28" text-anchor="middle" fill="#1A3A4A" font-family="Arial, sans-serif" font-size="5">EURO</text>
+      
+      <!-- Nota 2 (parcialmente visível) -->
+      <rect x="-5" y="5" width="50" height="30" rx="3" fill="#4A90A4" stroke="#2E5266" stroke-width="1" opacity="0.8"/>
+      <text x="20" y="25" text-anchor="middle" fill="#1A3A4A" font-family="Arial, sans-serif" font-size="12" font-weight="bold">100</text>
+      
+      <!-- Nota 3 (parcialmente visível) -->
+      <rect x="5" y="-5" width="50" height="30" rx="3" fill="#4A90A4" stroke="#2E5266" stroke-width="1" opacity="0.6"/>
+      <text x="30" y="15" text-anchor="middle" fill="#1A3A4A" font-family="Arial, sans-serif" font-size="12" font-weight="bold">100</text>
+    </g>
+  </g>
+  
+  <!-- Chamas e fogo -->
+  <g transform="translate(200, 60)">
+    <!-- Chama principal -->
+    <path d="M0 60 Q-10 50 -5 40 Q0 30 10 35 Q20 25 30 35 Q40 20 50 30 Q60 15 70 25 Q80 10 90 20 Q85 30 80 40 Q75 50 70 55 Q60 60 50 58 Q40 62 30 58 Q20 62 10 58 Q5 62 0 60 Z" fill="url(#fireGrad)" filter="url(#glow)"/>
+    
+    <!-- Chamas menores -->
+    <path d="M-20 55 Q-25 45 -20 40 Q-15 35 -10 40 Q-5 30 5 35 Q0 45 -5 50 Q-10 55 -15 52 Q-20 55 -20 55 Z" fill="url(#fireGrad)" opacity="0.8"/>
+    
+    <path d="M85 50 Q80 40 85 35 Q90 30 95 35 Q100 25 105 30 Q100 40 95 45 Q90 50 85 50 Z" fill="url(#fireGrad)" opacity="0.7"/>
+    
+    <!-- Partículas de fogo -->
+    <circle cx="-30" cy="45" r="3" fill="#FF8C00" opacity="0.6">
+      <animate attributeName="cy" values="45;35;45" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="110" cy="40" r="2" fill="#FFD700" opacity="0.5">
+      <animate attributeName="cy" values="40;30;40" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="45" cy="15" r="2.5" fill="#FF4500" opacity="0.7">
+      <animate attributeName="cy" values="15;5;15" dur="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0.2;0.7" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Texto principal -->
+  <g transform="translate(200, 200)">
+    <text x="0" y="0" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="24" font-weight="300" letter-spacing="2px">GERENCIAMENTO DE</text>
+    <text x="0" y="40" text-anchor="middle" fill="url(#goldGrad)" font-family="Arial, sans-serif" font-size="36" font-weight="bold" letter-spacing="1px" filter="url(#glow)">RISCO</text>
+    <text x="0" y="70" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="16" font-weight="400">Aprenda a ter um gerenciamento de risco</text>
+  </g>
+</svg>

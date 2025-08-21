@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#0a0a0a" opacity="0.3"/>
+  
+  <!-- Computer screens with trading charts -->
+  <!-- Screen 1 -->
+  <rect x="50" y="100" width="200" height="120" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="5"/>
+  <rect x="60" y="110" width="180" height="100" fill="#000"/>
+  <!-- Chart lines -->
+  <polyline points="70,180 90,160 110,140 130,150 150,130 170,120 190,110 210,100 230,90" 
+            fill="none" stroke="#00ff00" stroke-width="2"/>
+  <polyline points="70,190 90,185 110,175 130,180 150,170 170,165 190,160 210,155 230,150" 
+            fill="none" stroke="#ff4444" stroke-width="2"/>
+  
+  <!-- Screen 2 -->
+  <rect x="300" y="80" width="200" height="120" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="5"/>
+  <rect x="310" y="90" width="180" height="100" fill="#000"/>
+  <!-- Candlestick chart -->
+  <rect x="320" y="120" width="4" height="30" fill="#00ff00"/>
+  <rect x="330" y="110" width="4" height="40" fill="#ff4444"/>
+  <rect x="340" y="125" width="4" height="25" fill="#00ff00"/>
+  <rect x="350" y="115" width="4" height="35" fill="#00ff00"/>
+  <rect x="360" y="105" width="4" height="45" fill="#ff4444"/>
+  <rect x="370" y="130" width="4" height="20" fill="#00ff00"/>
+  <rect x="380" y="120" width="4" height="30" fill="#ff4444"/>
+  <rect x="390" y="110" width="4" height="40" fill="#00ff00"/>
+  <rect x="400" y="125" width="4" height="25" fill="#ff4444"/>
+  <rect x="410" y="115" width="4" height="35" fill="#00ff00"/>
+  <rect x="420" y="135" width="4" height="15" fill="#00ff00"/>
+  <rect x="430" y="120" width="4" height="30" fill="#ff4444"/>
+  <rect x="440" y="110" width="4" height="40" fill="#00ff00"/>
+  <rect x="450" y="125" width="4" height="25" fill="#00ff00"/>
+  <rect x="460" y="105" width="4" height="45" fill="#ff4444"/>
+  <rect x="470" y="130" width="4" height="20" fill="#00ff00"/>
+  
+  <!-- Screen 3 -->
+  <rect x="550" y="120" width="200" height="120" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="5"/>
+  <rect x="560" y="130" width="180" height="100" fill="#000"/>
+  <!-- Volume bars -->
+  <rect x="570" y="200" width="8" height="20" fill="#4a9eff"/>
+  <rect x="585" y="190" width="8" height="30" fill="#4a9eff"/>
+  <rect x="600" y="180" width="8" height="40" fill="#4a9eff"/>
+  <rect x="615" y="195" width="8" height="25" fill="#4a9eff"/>
+  <rect x="630" y="185" width="8" height="35" fill="#4a9eff"/>
+  <rect x="645" y="175" width="8" height="45" fill="#4a9eff"/>
+  <rect x="660" y="190" width="8" height="30" fill="#4a9eff"/>
+  <rect x="675" y="200" width="8" height="20" fill="#4a9eff"/>
+  <rect x="690" y="185" width="8" height="35" fill="#4a9eff"/>
+  <rect x="705" y="180" width="8" height="40" fill="#4a9eff"/>
+  <rect x="720" y="195" width="8" height="25" fill="#4a9eff"/>
+  
+  <!-- Keyboard and mouse silhouettes -->
+  <rect x="50" y="230" width="120" height="40" fill="#2a2a2a" rx="5"/>
+  <rect x="300" y="210" width="120" height="40" fill="#2a2a2a" rx="5"/>
+  <rect x="550" y="250" width="120" height="40" fill="#2a2a2a" rx="5"/>
+  
+  <!-- Mouse -->
+  <ellipse cx="200" cy="250" rx="15" ry="25" fill="#2a2a2a"/>
+  <ellipse cx="450" cy="230" rx="15" ry="25" fill="#2a2a2a"/>
+  <ellipse cx="700" cy="270" rx="15" ry="25" fill="#2a2a2a"/>
+  
+  <!-- Glowing effects -->
+  <circle cx="150" cy="160" r="80" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.2"/>
+  <circle cx="400" cy="140" r="90" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.15"/>
+  <circle cx="650" cy="180" r="85" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.1"/>
+</svg>
