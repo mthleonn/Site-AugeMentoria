@@ -6,9 +6,9 @@ const ASSETS_CONFIG = {
     // Logos
     LOGO_AUGE: './assets/images/Logo_augesemfundo.jpg', // Logo oficial AUGE
     
-    // Imagens dos mentores (agora usando SVGs na raiz)
-    MENTOR_RAFAEL: './rafael.svg',
-    MENTOR_DANIEL: './daniel.svg',
+    // Imagens dos mentores
+    MENTOR_RAFAEL: './assets/images/Rafael.jpg',
+    MENTOR_DANIEL: './assets/images/Daniel.jpg',
     
     // Imagens dos módulos
     MODULO_1: './assets/images/1.jpg', // Capa do Módulo 1
