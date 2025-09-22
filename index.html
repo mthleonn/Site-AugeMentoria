@@ -10,6 +10,90 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Elementos de Fundo Animados -->
+    <div class="background-elements">
+        <!-- Foguetes -->
+        <div class="rocket rocket-1">
+            <svg width="60" height="90" viewBox="0 0 40 60" fill="none">
+                <defs>
+                    <filter id="glow1">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M20 5L25 15H15L20 5Z" fill="#00ff00" filter="url(#glow1)"/>
+                <rect x="15" y="15" width="10" height="25" fill="#ffffff" filter="url(#glow1)"/>
+                <rect x="12" y="25" width="16" height="8" fill="#00cc00" filter="url(#glow1)"/>
+                <path d="M18 40L20 50L22 40H18Z" fill="#ff6600" filter="url(#glow1)"/>
+                <path d="M16 40L18 50L20 40H16Z" fill="#ff3300" filter="url(#glow1)"/>
+                <path d="M20 40L22 50L24 40H20Z" fill="#ff6600" filter="url(#glow1)"/>
+            </svg>
+        </div>
+        <div class="rocket rocket-2">
+            <svg width="52" height="75" viewBox="0 0 35 50" fill="none">
+                <defs>
+                    <filter id="glow2">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M17.5 3L22 12H13L17.5 3Z" fill="#00ff66" filter="url(#glow2)"/>
+                <rect x="13" y="12" width="9" height="20" fill="#ffffff" filter="url(#glow2)"/>
+                <rect x="11" y="20" width="13" height="6" fill="#00ff00" filter="url(#glow2)"/>
+                <path d="M15 32L17.5 40L20 32H15Z" fill="#ff9900" filter="url(#glow2)"/>
+                <path d="M13 32L15 40L17.5 32H13Z" fill="#ff6600" filter="url(#glow2)"/>
+                <path d="M17.5 32L20 40L22 32H17.5Z" fill="#ff9900" filter="url(#glow2)"/>
+            </svg>
+        </div>
+        <div class="rocket rocket-3">
+            <svg width="45" height="67" viewBox="0 0 30 45" fill="none">
+                <defs>
+                    <filter id="glow3">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge>
+                            <feMergeNode in="coloredBlur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+                <path d="M15 2L19 10H11L15 2Z" fill="#66ff00" filter="url(#glow3)"/>
+                <rect x="11" y="10" width="8" height="18" fill="#ffffff" filter="url(#glow3)"/>
+                <rect x="9" y="18" width="12" height="5" fill="#00ff00" filter="url(#glow3)"/>
+                <path d="M13 28L15 35L17 28H13Z" fill="#ffcc00" filter="url(#glow3)"/>
+                <path d="M11 28L13 35L15 28H11Z" fill="#ff9900" filter="url(#glow3)"/>
+                <path d="M15 28L17 35L19 28H15Z" fill="#ffcc00" filter="url(#glow3)"/>
+            </svg>
+        </div>
+        
+        <!-- Estrelas -->
+        <div class="star star-1">✦</div>
+        <div class="star star-2">✧</div>
+        <div class="star star-3">✦</div>
+        <div class="star star-4">✧</div>
+        <div class="star star-5">✦</div>
+        <div class="star star-6">✧</div>
+        <div class="star star-7">✦</div>
+        <div class="star star-8">✧</div>
+        
+        <!-- Partículas -->
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+        <div class="particle particle-5"></div>
+        <div class="particle particle-6"></div>
+        <div class="particle particle-7"></div>
+        <div class="particle particle-8"></div>
+        <div class="particle particle-9"></div>
+        <div class="particle particle-10"></div>
+    </div>
+    
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
@@ -230,8 +314,10 @@
     <!-- Final Section -->
     <section class="final">
         <h2 class="section-title">Transforme Sua Vida Agora</h2>
-        <div class="final-content">
-            <div class="final-left">
+        
+        <!-- Seção de Textos e Quadrados -->
+        <div class="info-section">
+            <div class="info-content">
                 <h2>Mas Daniel e Rafael, e se eu precisar de <span class="orange">suporte?</span></h2>
                 
                 <div class="support-box">
@@ -245,30 +331,189 @@
                     <p><span class="green">Mentoria</span> completa em 5 dias e mais 30 dias de sala ao vivo, deixando você preparado para operar em qualquer <span class="green">lugar do mundo</span>, com liberdade <span class="green">financeira</span> e <span class="green">geográfica</span> é na <span class="gold">AUGE</span></p>
                 </div>
             </div>
-            
-            <div class="final-right">
-                <div class="pricing-card">
-                    <h3>Promoção Exclusiva de Agosto</h3>
-                    <p>Uma mentoria completa ao seu alcance</p>
+        </div>
+        
+        <!-- Seção de Planos em Carrossel -->
+        <div class="pricing-carousel-section">
+            <div class="pricing-carousel-container">
+                <div class="pricing-section">
+                    <h3>🔥 Oferta Imperdível de Setembro! 🔥</h3>
+                    <p class="promo-subtitle">Escolha o plano ideal para sua jornada no trading</p>
                     
-                    <div class="price-old">
-                        <span class="strikethrough">R$2.197,00</span>
+                    <!-- Cronômetro de Urgência -->
+                    <div class="countdown-container">
+                        <div class="countdown-header">
+                            <h4>⏰ OFERTA EXPIRA EM:</h4>
+                            <p>Não perca essa oportunidade única!</p>
+                        </div>
+                        <div class="countdown-timer">
+                            <div class="time-unit">
+                                <span class="time-number" id="days">00</span>
+                                <span class="time-label">DIAS</span>
+                            </div>
+                            <div class="time-separator">:</div>
+                            <div class="time-unit">
+                                <span class="time-number" id="hours">00</span>
+                                <span class="time-label">HORAS</span>
+                            </div>
+                            <div class="time-separator">:</div>
+                            <div class="time-unit">
+                                <span class="time-number" id="minutes">00</span>
+                                <span class="time-label">MINUTOS</span>
+                            </div>
+                            <div class="time-separator">:</div>
+                            <div class="time-unit">
+                                <span class="time-number" id="seconds">00</span>
+                                <span class="time-label">SEGUNDOS</span>
+                            </div>
+                        </div>
+                        <div class="countdown-warning">
+                            <p>🚨 Após o tempo esgotar, os preços voltam ao valor original!</p>
+                        </div>
                     </div>
                     
-                    <div class="price-installment">
-                        <span>Por apenas</span> <span class="installments">12x</span> <span>com juros de</span>
-                        <div class="price-main">R$155,14</div>
+                    <!-- Planos lado a lado -->
+                    <div class="pricing-plans">
+                        <!-- Plano 30 dias -->
+                        <div class="pricing-card plan-basic" data-plan="30dias">
+                            <div class="plan-header">
+                                <h4>PLANO BÁSICO</h4>
+                                <div class="plan-duration">30 DIAS</div>
+                            </div>
+                            <div class="plan-price">
+                                <div class="discount-badge">26% OFF</div>
+                                <span class="price-old">R$ 1.499</span>
+                                <span class="currency">R$</span>
+                                <span class="amount">1.099</span>
+                                <span class="cents">,00</span>
+                            </div>
+                            <div class="plan-features">
+                                <p>✅ Mentoria completa em 5 dias</p>
+                                <p>✅ 30 dias de sala ao vivo</p>
+                                <p>✅ Suporte direto dos mentores</p>
+                                <p>✅ Grupo VIP no Telegram</p>
+                            </div>
+                            <a href="https://pay.kiwify.com.br/f3xSKKP" target="_blank" class="plan-cta cta-primary">
+                                <span>🔥 GARANTIR VAGA</span>
+                                <small>Últimas vagas disponíveis!</small>
+                            </a>
+                        </div>
+                        
+                        <!-- Plano 90 dias -->
+                        <div class="pricing-card plan-popular" data-plan="90dias">
+                            <div class="plan-header">
+                                <h4>PLANO AVANÇADO</h4>
+                                <div class="plan-duration">90 DIAS</div>
+                            </div>
+                            <div class="plan-price">
+                                <div class="discount-badge">28% OFF</div>
+                                <span class="price-old">R$ 1.799</span>
+                                <span class="currency">R$</span>
+                                <span class="amount">1.299</span>
+                                <span class="cents">,00</span>
+                            </div>
+                            <div class="plan-features">
+                                <p>✅ Mentoria completa em 5 dias</p>
+                                <p>✅ 90 dias de sala ao vivo</p>
+                                <p>✅ Suporte direto dos mentores</p>
+                                <p>✅ Análises extras semanais</p>
+                                <p>✅ Grupo VIP no Telegram</p>
+                                <p>✅ Bônus: E-book exclusivo</p>
+                            </div>
+                            <a href="https://pay.kiwify.com.br/pBTOIpD" target="_blank" class="plan-cta popular-cta">
+                                <span>💎 ESCOLHA INTELIGENTE</span>
+                                <small>Melhor custo-benefício!</small>
+                            </a>
+                        </div>
+                        
+                        <!-- Plano 180 dias -->
+                        <div class="pricing-card plan-premium" data-plan="180dias">
+                            <div class="plan-header">
+                                <h4>PLANO PREMIUM</h4>
+                                <div class="plan-duration">180 DIAS</div>
+                            </div>
+                            <div class="plan-price">
+                                <div class="discount-badge">32% OFF</div>
+                                <span class="price-old">R$ 2.199</span>
+                                <span class="currency">R$</span>
+                                <span class="amount">1.499</span>
+                                <span class="cents">,00</span>
+                            </div>
+                            <div class="plan-features">
+                                <p>✅ Mentoria completa em 5 dias</p>
+                                <p>✅ 180 dias de sala ao vivo</p>
+                                <p>✅ Suporte direto dos mentores</p>
+                                <p>✅ Análises extras semanais</p>
+                                <p>✅ Grupo VIP no Telegram</p>
+                                <p>✅ Acesso vitalício ao material</p>
+                            </div>
+                            <a href="https://pay.kiwify.com.br/IpQjH8e" target="_blank" class="plan-cta premium-cta">
+                                <span>🏆 TRANSFORMAÇÃO TOTAL</span>
+                                <small>Máximo resultado garantido!</small>
+                            </a>
+                        </div>
                     </div>
                     
-                    <div class="price-cash">
-                        <span>Ou R$1.500,00</span> <span class="bold">à vista</span>
+                    <div class="guarantee-badge">
+                        <p>🛡️ <strong>Garantia de 7 dias</strong> - Se não ficar satisfeito, devolvemos seu dinheiro!</p>
                     </div>
-                    
-                    <a href="https://pay.kiwify.com.br/oBuEYOG" target="_blank" class="final-cta">Quero fazer parte da Mentoria</a>
                 </div>
             </div>
         </div>
     </section>
+    
+    <!-- Script do Carrossel -->
+    <script>
+            // Script simplificado - sem carrossel
+            console.log('Planos carregados com sucesso!');
+            
+            // Cronômetro de Urgência
+             function initCountdown() {
+                 // Define o tempo final (final do mês atual)
+                 const now = new Date();
+                 const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0, 23, 59, 59);
+                 const countdownTime = endOfMonth.getTime();
+                
+                function updateCountdown() {
+                    const now = new Date().getTime();
+                    const distance = countdownTime - now;
+                    
+                    if (distance < 0) {
+                        // Tempo esgotado - reinicia para 24 horas
+                        const newCountdownTime = new Date().getTime() + (24 * 60 * 60 * 1000);
+                        updateCountdownDisplay(newCountdownTime - new Date().getTime());
+                        return;
+                    }
+                    
+                    updateCountdownDisplay(distance);
+                }
+                
+                function updateCountdownDisplay(distance) {
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                    
+                    // Atualiza os elementos do DOM
+                    const daysEl = document.getElementById('days');
+                    const hoursEl = document.getElementById('hours');
+                    const minutesEl = document.getElementById('minutes');
+                    const secondsEl = document.getElementById('seconds');
+                    
+                    if (daysEl) daysEl.textContent = days.toString().padStart(2, '0');
+                    if (hoursEl) hoursEl.textContent = hours.toString().padStart(2, '0');
+                    if (minutesEl) minutesEl.textContent = minutes.toString().padStart(2, '0');
+                    if (secondsEl) secondsEl.textContent = seconds.toString().padStart(2, '0');
+                }
+                
+                // Atualiza a cada segundo
+                updateCountdown();
+                setInterval(updateCountdown, 1000);
+            }
+            
+            // Inicializa o cronômetro quando a página carrega
+            document.addEventListener('DOMContentLoaded', initCountdown);
+        </script>
 
     <!-- FAQ Section -->
     <section class="faq">
